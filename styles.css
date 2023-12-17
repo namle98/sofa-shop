@@ -1,0 +1,105 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.heading_font {
+  font-family: "Cinzel", serif;
+  font-family: "Playfair Display", serif;
+  font-weight: 100;
+}
+
+.menu {
+  position: relative;
+  transition: all ease-in-out 0.4s;
+}
+
+.menu:hover .sub_menu {
+  display: block;
+}
+
+.sub_menu {
+  display: none;
+  position: absolute;
+  padding: 8px 12px;
+  bottom: -135px;
+  width: max-content;
+  background-color: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #00000026;
+  z-index: 100;
+}
+
+.sub_menu li {
+  padding: 8px 12px;
+}
+
+.sub_menu li:hover {
+  background-color: #f6f5f2;
+  cursor: pointer;
+}
+
+.slide_banner {
+  background-image: url("./images/banner-image1.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  padding: 7rem 0;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 15px;
+  border-radius: 4px;
+  border: none;
+  overflow: hidden;
+  background: #787d62;
+  color: #fff;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.button-text {
+  transform: translateX(15px);
+  transition-duration: 0.3s;
+}
+
+.iconer {
+  transform: translateY(50px);
+  transition-duration: 0.3s;
+}
+
+.button:hover .button-text {
+  transform: translateX(0px);
+}
+
+.button:hover .iconer {
+  transform: translateY(0px);
+}
+
+.card_product {
+  cursor: pointer;
+}
+
+.card_product:hover {
+  transition: all ease-in-out 0.4s;
+  transform: scale(0.9);
+}
+
+.custom_slide {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: fit-content !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #787d62 !important;
+}
+
+.swiper-button-next {
+  color: #787d62 !important;
+}
+.swiper-button-prev {
+  color: #787d62 !important;
+}
